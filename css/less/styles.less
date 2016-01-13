@@ -1,0 +1,445 @@
+.horizontalAlign (@width : 80%){
+    width: @width;
+    margin: 0 (100% - @width)/2;
+//    margin-right: (100% - @width)/2;
+}
+@fonts: 'Roboto', sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+html{
+    font-family: @fonts;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden
+}
+h2,h3,h4 {
+	text-align:center
+}
+footer{
+    text-align: center;
+    padding-bottom:3%
+}
+.main{
+    margin-top: 45px;
+}
+.hide-me {
+    display: none;
+}
+.show-cookies-notification {
+	padding-bottom:65px
+}
+.ar-about {
+	.horizontalAlign(80%);
+	text-align:justify;
+	clear:both
+}
+.first-section{
+	margin-top:45px
+}
+.ar-about p,.experience-desc p {
+	font-size:1em
+}
+.my-photo {
+    .horizontalAlign(50%)
+}
+.bx-next,.bx-prev {
+    display:none
+}
+.skill-image {
+	width:80%;
+	height:auto;
+	margin:10%;
+	opacity:.5;
+	position:absolute
+}
+.skills-list{
+    padding:0;
+	display:inline-block;
+    .horizontalAlign(80%);
+	height:auto;
+    list-style: none;
+    li{
+        position: relative;
+        float: left;
+        width: 16.66666%;
+        padding-bottom: 16.66666%;
+        a{
+            display:block;
+	       color:#f0f8ff;
+	       border-collapse:collapse
+        }
+    }
+}
+.skill-description {
+	.horizontalAlign(80%);
+    text-align:inherit;
+	display:none;
+	padding-bottom:25px;
+	font-size:16px
+}
+.active,.skill-image:hover {
+	padding:0;
+	width:100%;
+	opacity:1;
+	margin:0
+}
+.lang-img {
+    width:100%;
+    text-align:left
+}
+.lang-img a img {
+    margin-right:10px;
+    margin-left:0
+}
+.company-logo {
+    .horizontalAlign(60%);
+    height: 50px;
+    padding-left:0;
+    padding-right:0;
+    padding-bottom:100px
+}
+.experience-info span {
+    width:100%;
+    float:left
+}
+.bx-viewport{
+    height: auto;
+}
+.about,.ar-about,li .experience-desc, .experience-info  {
+    .horizontalAlign(95%)
+}
+.experience-desc {
+    text-align:justify;
+    float:left;
+    height:auto
+}
+.about {
+    margin-bottom:15px
+}
+.ar-about {
+    text-align:justify
+}
+
+.form-horizontal {
+	.horizontalAlign(80%)
+}
+.contact-form {
+    .horizontalAlign(90%);
+}
+.input-group{
+  display: block;
+}
+.not-found-main {
+    background-color:#fff;
+    width:100%;
+    overflow:hidden;
+    .main-text {
+        text-align: center;
+        width:96%;
+        margin:2%;
+        font-size:3em;
+        color:#000;
+        float: left;
+    }
+    .explanation {
+        width:80%;
+        margin:5%;
+        text-align: justify;
+        float: left;
+    }
+    a {
+        .horizontalAlign(70%);
+        text-align:center;
+        float: left;
+    }
+}
+.not-found-image-container {
+    left:0;
+    padding:0;
+    width:96%;
+    margin:2%;
+}
+.contact-forminfo {
+    .horizontalAlign(90%);
+    font-size:14px;
+    a{
+        font-size: 14px
+    }
+}
+.cooke-notification{
+    position:fixed;
+	bottom:0;
+	color:#fff;
+	z-index:9998;
+	width:100%;
+	background-color:#000;
+	opacity:.5;
+    p {
+        margin-left:20%;
+        max-width:60%;
+        float:left;
+        padding-top:1%;
+        padding-bottom:1%;
+    }
+    a{
+        float:right
+    }
+    .btn{
+        position:absolute;
+        top:5px;
+        right:5px
+    }
+}
+body .cooke-notification p,body .cooke-notification p a {
+  float:left;
+  padding-top:1%;
+  padding-bottom:1%
+}
+.cooke-notification p {
+  margin:0
+}
+body .cooke-notification p {
+  margin-left:20%;
+  max-width:60%
+}
+body .cooke-notification .btn {
+  position:absolute;
+  top:5px;
+  right:5px
+}
+.projects-content{
+    .horizontalAlign(90%);
+}
+.backgroundPopup {
+	top:0;
+	left:0;
+	background:#000;
+	z-index:9998
+}
+.contactForm-container {
+	color:#fff;
+	z-index:9999
+}
+.backgroundPopup,.contactForm-container {
+	height:100%;
+	position:fixed;
+	display:none;
+	width:100%;
+    overflow: hidden
+}
+.open{
+    display: block
+}
+.right{
+    float: right
+}
+.jumbotron .form-submit-mesage {
+	font-size:1em
+}
+.success {
+  color:#ff0;
+}
+.failure {
+  color:red;
+}
+.confirmation{
+  width: 100;
+}
+.confirmation .checkbox {
+  max-width: 130px;
+  margin-right: 10px;
+  float: right;
+  margin-top: 10px
+}
+.confirmation .btn-primary{
+  width: auto;
+  float: right;
+  margin-left: 5px;
+  margin-top: 10px
+}
+.confirmation .btn-default{
+  width: auto;
+  float: right;
+  margin-top: 10px
+}
+.contact-form-wait {
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contact-form-container{
+  margin: 0;
+  padding: 0;
+  width: 98%;
+  height: 100%;
+}
+@media screen and (min-width:480px){
+    .my-photo {
+        float:left;
+        margin-left:10%;
+        margin-bottom:25px;
+        width:20%
+    }
+    .skill-description {
+	   .horizontalAlign(60%);
+    }
+    .company-logo {
+        margin: 0;
+        padding: 0;
+        position:absolute;
+        width:25%;
+        right:10%;
+    }
+    .cooke-notification{
+        p {
+            margin-left:35%
+        }
+    }
+    .not-found-image-container {
+        max-width: 40%;
+        left:0;
+        padding:0;
+       .horizontalAlign(40%);
+    }
+    .not-found-main {
+        .main-text {
+            text-align: center;
+            .horizontalAlign(80%);
+            font-size:3em;
+            color:#000;
+            float: left;
+        }
+        .explanation {
+            .horizontalAlign(80%);
+            text-align: justify;
+            float: left;
+        }
+        a {
+            .horizontalAlign(70%);
+            text-align:center;
+            float: left;
+        }
+    }
+}
+@media screen and (min-width:768px){
+    .skill-description {
+	   .horizontalAlign(40%);
+    }
+    .bx-next,.bx-prev {
+        display:block;
+    }
+    // .contactForm {
+    //     .input-group {
+    //         display: table-cell;
+    //     }
+    // }
+    .cooke-notification{
+        p {
+            margin-left: 60%;
+        }
+    }
+    .projects-content{
+        .horizontalAlign(80%);
+    }
+    .not-found-main {
+        .main-text {
+            box-sizing: border-box;
+            text-align: center;
+            padding-top: 10%;
+            width:60%;
+            margin:2%;
+            font-size:3em;
+            color:#000;
+            float: left;
+        }
+        .explanation {
+            .horizontalAlign(80%);
+            text-align: justify;
+            float: left;
+        }
+        a {
+            .horizontalAlign(70%);
+            text-align:center;
+            float: left;
+        }
+        .not-found-image-container {
+            box-sizing: border-box;
+            left:0;
+            padding:0;
+            width:30%;
+            margin:2%;
+            float: left;
+        }
+    }
+    .about {
+        float:right;
+	    width:30%
+    }
+    .confirmation {
+  		margin-top:10px;
+  	}
+  	.confirmation .checkbox {
+  		max-width: 150px;
+      margin-right: 25px;
+  		float: right;
+  	}
+  	.confirmation .btn-primary{
+  		width: auto;
+  		float: right;
+      margin-left: 10px;
+  	}
+  	.confirmation .btn-default{
+  		width: auto;
+  		float: right
+  	}
+    .contact-form-wait {
+    	height: 36px;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    }
+    .form-submit-mesage {
+    		margin: 0 40%;
+    		width: 100%;
+    }
+    .contact-form .input-group{
+    	margin: 3px 0px;
+    }
+    .input-group-addon{
+    	min-width: 130px;
+      display: table-cell;
+    }
+    .contact-form-container {
+      .horizontalAlign(60%);
+      padding-top: 25px;
+      margin-top: 50px;
+    }
+    .experience-desc ul {
+    	list-style:inside
+    }
+    .ar-about {
+      .horizontalAlign(80%);
+    	text-align:justify;
+    	clear:both
+    }
+    .experience-info {
+    	.horizontalAlign(80%);
+    	float:left
+    }
+    li .experience-desc{
+      .horizontalAlign(80%);
+    	float:left
+    }
+    .bxslider .inner img {
+    	.horizontalAlign(80%);
+    }
+    .bxslider .inner ul li {
+    	max-height:460px
+    }
+    .bxslider {
+    	max-height:480px
+    }
+    .input-group{
+      display: table;
+    }
+}

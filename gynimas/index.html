@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Baigiamasis darbas</title>
+		<meta name="description" content="Graduating work presentation, powered by reveal.js">
+		<meta name="author" content="Pavel Gulbickij">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<p>
+					<small>	Vilniaus kolegija</br>
+						Elektronikos ir informatikos fakultetas</br>
+						Programinės įrangos katedra</small>
+					</p>
+					<br>
+					<br>
+					<h2>Reaktyvaus dizaino asmeninė interneto svetainė</h2>
+					<!-- <h3>The HTML Presentation Framework</h3> -->
+					<br>
+					<br>
+					<br>
+					<p>
+						<small> Vadovas: Virgilijus Kuklierius</small></br>
+						<small> Diplomantas: Pavel Gulbickij</small>
+					</p>
+
+					<p>
+						<small>Vilnius 2016</small>
+					</p>
+				</section>
+				<section>
+					<h2>Baigiamojo darbo tikslas</h2>
+					<ul>
+						<li>Sukurti reaktyvaus dizaino asmeninę svetainę</li>
+						<li>Sukurti dinaminę turinio valdymo sistemą</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Svetainės reaktyvumas, reaktyvus dizainas</h2>
+						<img class="qr-image" src="qr-code.jpg" alt="" />
+					</section>
+					<section>
+						<h2>Vaizdas didėlios raiškos ekranuose</h2>
+						<img src="desctop.jpeg" alt="" />
+					</section>
+					<section>
+						<h2>Vaizdas mobiliosiuose įrenginiuose</h2>
+						<img src="mobile.jpeg" alt="" />
+					</section>
+				</section>
+				<section>
+					<h2>Baigiamojo darbo ruošimo eiga</h2>
+					<section>
+						<ul>
+							<li>Realizavimo priemonių pasirinkimas</li>
+							<li>Svetainės struktūros piešimas (angl. Wireframes)</li>
+							<li>Svetainės struktūros šablono kūrimas</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Duomenų bazės kūrimas</li>
+							<li>Pagrindinio svetainės funkcionalumo kūrimas</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Turinio valdymo sistemos funkcionalumo nustatymas ir kūrimas</li>
+							<li>Svetainės skilčių šablonų kūrimas</li>
+							<li>Svetainės struktūros užpildymas testinėmis duomenemis</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Svetainės ir turinio valdymo sistemos testavimas</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+						<h3>Sistemos veikimo diagrama</h3>
+						<img src="chart.jpeg" alt="" />
+				</section>
+				<section>
+					<h2>Skirtingų naršyklių palaikymas</h2>
+					<h3>Ištestuota su:</h3>
+					<table style="width:100%">
+					  <tr>
+					    <td>Chrome</td>
+					    <td>Opera</td>
+					    <td>Firefox</td>
+							<td>Safari</td>
+							<td>Explorer</td>
+							<td>AOSP</td>
+					  </tr>
+					  <tr>
+					    <td>&nbsp;&nbsp;&nbsp;43+</td>
+					    <td>&nbsp;&nbsp;&nbsp;32+</td>
+					    <td>&nbsp;&nbsp;&nbsp;40+</td>
+							<td>&nbsp;&nbsp;&nbsp;9+</td>
+							<td>&nbsp;&nbsp;&nbsp;10+</td>
+							<td>&nbsp;&nbsp;&nbsp;4.4+</td>
+					  </tr>
+					</table>
+				</section>
+				<section>
+				<p>
+					Rezultatai:
+				</p>
+					<ul>
+						<li>Reaktyvios svetainės šablonas</li>
+						<li>Duomenų bazė </li>
+						<li><a href="http://www.pgulbickij.lt/test-cms/" target="_blank"> Turinio valdymo sistema</a></li>
+						<li>Skilčių struktūros šablonai</li>
+						<li><a href="http://www.pgulbickij.lt" target="_blank">Interneto svetainė</a> <br></li>
+					</ul> <br>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+
+			Reveal.initialize({
+			  // other options...
+
+			    multiplex: {
+			        // Example values. To generate your own, see the socket.io server instructions.
+			        secret: null, // null so the clients do not have control of the master presentation
+			        id: '3e92ad6c9bed8229', // id, obtained from socket.io server
+			        url: 'pgulbickijmaster.herokuapp.com' // Location of socket.io server
+			    },
+
+			    // Don't forget to add the dependencies
+			    dependencies: [
+			        { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+			        { src: 'plugin/multiplex/client.js', async: true }
+
+			        // other dependencies...
+			    ]
+			});
+
+		</script>
+
+	</body>
+</html>

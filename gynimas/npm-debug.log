@@ -1,0 +1,77 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '–g',
+1 verbose cli   'generator-express' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ '–g', null ]
+7 verbose cache add name=undefined spec="–g" args=["–g",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '–g',
+8 verbose parsed url   path: '–g',
+8 verbose parsed url   href: '–g' }
+9 verbose cache add [ 'generator-express', null ]
+10 verbose cache add name=undefined spec="generator-express" args=["generator-express",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'generator-express',
+11 verbose parsed url   path: 'generator-express',
+11 verbose parsed url   href: 'generator-express' }
+12 silly lockFile 51e00793-g –g
+13 verbose lock –g /home/horolug/.npm/51e00793-g.lock
+14 silly lockFile e43dff90-generator-express generator-express
+15 verbose lock generator-express /home/horolug/.npm/e43dff90-generator-express.lock
+16 silly lockFile 51e00793-g –g
+17 silly lockFile 51e00793-g –g
+18 silly lockFile e43dff90-generator-express generator-express
+19 silly lockFile e43dff90-generator-express generator-express
+20 verbose addNamed [ '–g', '' ]
+21 verbose addNamed [ null, '*' ]
+22 silly lockFile 72e0e7f9-g –g@
+23 verbose lock –g@ /home/horolug/.npm/72e0e7f9-g.lock
+24 verbose addNamed [ 'generator-express', '' ]
+25 verbose addNamed [ null, '*' ]
+26 silly lockFile fbc6e229-generator-express generator-express@
+27 verbose lock generator-express@ /home/horolug/.npm/fbc6e229-generator-express.lock
+28 silly addNameRange { name: '–g', range: '*', hasData: false }
+29 silly addNameRange { name: 'generator-express', range: '*', hasData: false }
+30 verbose registry.get –g not expired, no request
+31 silly addNameRange number 2 { name: '–g', range: '*', hasData: true }
+32 silly addNameRange versions [ undefined, [] ]
+33 error TypeError: Cannot read property 'latest' of undefined
+33 error     at next (/usr/lib/node_modules/npm/lib/cache/add-named.js:216:35)
+33 error     at /usr/lib/node_modules/npm/lib/cache/add-named.js:204:5
+33 error     at RegClient.get_ (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:104:14)
+33 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:43:12)
+33 error     at fs.js:271:14
+33 error     at /usr/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:105:5
+33 error     at Object.oncomplete (fs.js:107:15)
+34 error If you need help, you may report this *entire* log,
+34 error including the npm and node versions, at:
+34 error     <http://github.com/npm/npm/issues>
+35 error System Linux 3.13.0-35-generic
+36 error command "/usr/bin/node" "/usr/bin/npm" "install" "–g" "generator-express"
+37 error cwd /var/www/html/gynimas
+38 error node -v v0.10.29
+39 error npm -v 1.4.14
+40 error type non_object_property_load
+41 verbose exit [ 1, true ]

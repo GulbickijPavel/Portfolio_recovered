@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,latin-ext,cyrillic);
+html {
+  font-family: 'Roboto', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding-bottom: 3%;
+}
+.hide-me {
+  display: none;
+}
+.show-cookies-notification {
+  padding-bottom: 65px;
+}
+.ar-about {
+  width: 80%;
+  margin: 0 10%;
+  text-align: justify;
+  clear: both;
+}
+.first-section {
+  margin-top: 45px;
+}
+.ar-about p,
+.experience-desc p {
+  font-size: 1em;
+}
+.my-photo {
+  width: 50%;
+  margin: 0 25%;
+}
+.bx-next,
+.bx-prev {
+  display: none;
+}
+.skill-image {
+  width: 80%;
+  height: auto;
+  margin: 10%;
+  opacity: .5;
+  position: absolute;
+}
+.skills-list {
+  padding: 0;
+  display: inline-block;
+  width: 80%;
+  margin: 0 10%;
+  height: auto;
+  list-style: none;
+}
+.skills-list li {
+  position: relative;
+  float: left;
+  width: 16.66666%;
+  padding-bottom: 16.66666%;
+}
+.skills-list li a {
+  display: block;
+  color: #f0f8ff;
+  border-collapse: collapse;
+}
+.skill-description {
+  width: 80%;
+  margin: 0 10%;
+  text-align: inherit;
+  display: none;
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+.active,
+.skill-image:hover {
+  padding: 0;
+  width: 100%;
+  opacity: 1;
+  margin: 0;
+}
+.lang-img {
+  width: 100%;
+  text-align: left;
+}
+.lang-img a img {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.company-logo {
+  width: 60%;
+  margin: 0 20%;
+  height: 50px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 100px;
+}
+.experience-info span {
+  width: 100%;
+  float: left;
+}
+.bx-viewport {
+  height: auto;
+}
+.about,
+.ar-about,
+li .experience-desc,
+.experience-info {
+  width: 95%;
+  margin: 0 2.5%;
+}
+.experience-desc {
+  text-align: justify;
+  float: left;
+  height: auto;
+}
+.about {
+  margin-bottom: 15px;
+}
+.ar-about {
+  text-align: justify;
+}
+.form-horizontal {
+  width: 80%;
+  margin: 0 10%;
+}
+.contactForm {
+  width: 90%;
+  margin: 0 5%;
+}
+.contactForm .btn {
+  margin-top: 15px;
+}
+.contactForm .input-group {
+  display: block;
+}
+.not-found-main {
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+}
+.not-found-main .main-text {
+  text-align: center;
+  width: 96%;
+  margin: 2%;
+  font-size: 3em;
+  color: #000;
+  float: left;
+}
+.not-found-main .explanation {
+  width: 80%;
+  margin: 5%;
+  text-align: justify;
+  float: left;
+}
+.not-found-main a {
+  width: 70%;
+  margin: 0 15%;
+  text-align: center;
+  float: left;
+}
+.not-found-image-container {
+  left: 0;
+  padding: 0;
+  width: 96%;
+  margin: 2%;
+}
+.contact-forminfo {
+  width: 100%;
+  margin-left: 10%;
+  font-size: 14px;
+}
+.contact-forminfo a {
+  font-size: 14px;
+}
+.cooke-notification {
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  z-index: 9998;
+  width: 100%;
+  background-color: #000;
+  opacity: .5;
+}
+.cooke-notification p {
+  margin-left: 20%;
+  max-width: 60%;
+  float: left;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.cooke-notification a {
+  float: right;
+}
+.cooke-notification .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.projects-content {
+  width: 90%;
+  margin: 0 5%;
+}
+.backgroundPopup {
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9998;
+}
+.contactForm-container {
+  color: #fff;
+  z-index: 9999;
+}
+.backgroundPopup,
+.contactForm-container {
+  height: 100%;
+  position: fixed;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+}
+.open {
+  display: block;
+}
+.right {
+  float: right;
+}
+@media screen and (min-width: 480px) {
+  .my-photo {
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    width: 20%;
+  }
+  .skill-description {
+    width: 60%;
+    margin: 0 20%;
+  }
+  .company-logo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 25%;
+    right: 10%;
+  }
+  .cooke-notification p {
+    margin-left: 35%;
+  }
+  .not-found-image-container {
+    max-width: 40%;
+    left: 0;
+    padding: 0;
+    width: 40%;
+    margin: 0 30%;
+  }
+  .not-found-main .main-text {
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+    font-size: 3em;
+    color: #000;
+    float: left;
+  }
+  .not-found-main .explanation {
+    width: 80%;
+    margin: 0 10%;
+    text-align: justify;
+    float: left;
+  }
+  .not-found-main a {
+    width: 70%;
+    margin: 0 15%;
+    text-align: center;
+    float: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skill-description {
+    width: 40%;
+    margin: 0 30%;
+  }
+  .bx-next,
+  .bx-prev {
+    display: block;
+  }
+  .contactForm .input-group {
+    display: table;
+  }
+  .cooke-notification p {
+    margin-left: 60%;
+  }
+  .projects-content {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .not-found-main .main-text {
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 10%;
+    width: 60%;
+    margin: 2%;
+    font-size: 3em;
+    color: #000;
+    float: left;
+  }
+  .not-found-main .explanation {
+    width: 80%;
+    margin: 0 10%;
+    text-align: justify;
+    float: left;
+  }
+  .not-found-main a {
+    width: 70%;
+    margin: 0 15%;
+    text-align: center;
+    float: left;
+  }
+  .not-found-main .not-found-image-container {
+    box-sizing: border-box;
+    left: 0;
+    padding: 0;
+    width: 30%;
+    margin: 2%;
+    float: left;
+  }
+  .about {
+    float: right;
+    width: 30%;
+  }
+}

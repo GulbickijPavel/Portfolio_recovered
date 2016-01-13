@@ -1,0 +1,13 @@
+.newItem p{
+	font-size: inherit;
+	text-align: justify;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.newItem ul {
+	text-align: center;
+}
+.newItem h1,h2,h3,h4,h5,h6{
+	text-align: center;
+}
