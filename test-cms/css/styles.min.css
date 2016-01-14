@@ -783,3 +783,18 @@ footer {
 .contact-form .input-group{
 	margin: 3px 0px;
 }
+ .login-form .btn-default, .login-form .btn-primary{
+	float: right;
+	margin-top: 10px;
+	margin-left: 10px;
+} 
+.login .jumbotron{
+		padding-bottom: 60px;
+		border-radius: 10px;
+}
+.login-form .input-group-addon{
+		min-width: 150px;
+}
+.section-add-btn, .section-control-btn{
+	float: left
+}

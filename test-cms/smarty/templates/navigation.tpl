@@ -52,9 +52,9 @@
                                     <a ng-click='go(file.docs, 0)' class="section-controll"  ref="{{file.href}}"><i class="fa fa-file fa-fw"></i>{{file.docs}}</a>
                                 </li>
 
-                        </ul>
-                           <button class="btn btn-primary section-add-btn hide-me">Nauja skiltis</button>
-                           <button ng-click="sectionControl()" class="btn btn-primary section-controll-btn hide-me">Valdyti skiltis</button>
+                              </ul>
+                              <button class="btn btn-primary section-add-btn hide-me">Nauja skiltis</button>
+                              <button ng-click="sectionControl()" class="btn btn-primary section-controll-btn hide-me">Valdyti skiltis</button>
                             {/literal}
                         </li>
                         <!-- <li>
@@ -62,7 +62,8 @@
 
                         </li> -->
                         <li>
-                            <a href="#"><i class="fa  fa-cog fa-fw"></i>Nustatymai<span class="fa arrow"></span></a>{literal}
+                            <a class="settings-nav" href="#"><i class="fa  fa-cog fa-fw"></i>Nustatymai<span class="fa arrow"></span></a>
+                            {literal}
                             <ul class="nav nav-second-level">
                                 <li ng-repeat="setting in settings.docs">
                                     <a ng-click='translation()' class="cms" ref="{{setting.href}}"><i class="fa fa-cog fa-fw"></i>Vertimų/kalbų valdymas</a>

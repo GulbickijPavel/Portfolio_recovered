@@ -966,3 +966,6 @@ img.mfp-img {
     float: right;
     margin-right: 15px;
 }
+.language-select .input-group-addon, form-control{
+    height: 34px;
+}

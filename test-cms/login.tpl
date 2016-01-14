@@ -20,13 +20,13 @@
                       <span class="input-group-addon">Slaptažodis:</span>
                       <input type="password" class="form-control" name="password" data-validation="custom" data-validation-regexp="^([a-zA-Z0-9]+)$" data-validation-error-msg="Naudokite tik lotiniškas raides/skaičius" data-validation-optional="true">
                     </div>
-                  <button type="reset" class="btn btn-default">Atšaukti</button>
-                  <button type="submit" class="btn btn-primary">Pateikti</button>
+                    <button type="submit" class="btn btn-primary">Pateikti</button>
+                    <button type="reset" class="btn btn-default">Atšaukti</button>
                 </form>
             </div>
         </div>
-        <!-- <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="/test-cms/js/script.js"></script> -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- <script src="/test-cms/js/script.js"></script> -->
         <script src="/test-cms/js/validator.js"></script>
     </body>
 

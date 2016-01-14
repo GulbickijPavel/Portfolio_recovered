@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2016-01-11 19:28:24
+<?php /* Smarty version 3.1.24, created on 2016-01-14 02:44:13
          compiled from "/var/www/html/test-cms/login.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:12920348465693e6387c2bb8_27419142%%*/
+/*%%SmartyHeaderCode:21317434615696ef5d1f2f43_69533223%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6b8cc94a07663b49f5a7f8750132d145e729532c' => 
     array (
       0 => '/var/www/html/test-cms/login.tpl',
-      1 => 1452533299,
+      1 => 1452732249,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '12920348465693e6387c2bb8_27419142',
+  'nocache_hash' => '21317434615696ef5d1f2f43_69533223',
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_5693e6387d3cd3_53577032',
+  'unifunc' => 'content_5696ef5d206b50_73172804',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5693e6387d3cd3_53577032')) {
-function content_5693e6387d3cd3_53577032 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5696ef5d206b50_73172804')) {
+function content_5696ef5d206b50_73172804 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '12920348465693e6387c2bb8_27419142';
+$_smarty_tpl->properties['nocache_hash'] = '21317434615696ef5d1f2f43_69533223';
 ?>
 <!doctype html>
 <html>
@@ -46,15 +46,15 @@ $_smarty_tpl->properties['nocache_hash'] = '12920348465693e6387c2bb8_27419142';
                       <span class="input-group-addon">Slaptažodis:</span>
                       <input type="password" class="form-control" name="password" data-validation="custom" data-validation-regexp="^([a-zA-Z0-9]+)$" data-validation-error-msg="Naudokite tik lotiniškas raides/skaičius" data-validation-optional="true">
                     </div>
-                  <button type="reset" class="btn btn-default">Atšaukti</button>
-                  <button type="submit" class="btn btn-primary">Pateikti</button>
+                    <button type="submit" class="btn btn-primary">Pateikti</button>
+                    <button type="reset" class="btn btn-default">Atšaukti</button>
                 </form>
             </div>
         </div>
-        <!-- <?php echo '<script'; ?>
+        <?php echo '<script'; ?>
  src="bower_components/jquery/dist/jquery.min.js"><?php echo '</script'; ?>
 >
-        <?php echo '<script'; ?>
+        <!-- <?php echo '<script'; ?>
  src="/test-cms/js/script.js"><?php echo '</script'; ?>
 > -->
         <?php echo '<script'; ?>

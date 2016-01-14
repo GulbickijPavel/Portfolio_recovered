@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2016-01-11 00:16:35
+<?php /* Smarty version 3.1.24, created on 2016-01-14 02:55:21
          compiled from "/var/www/html/test-cms/smarty/templates/navigation.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:13222806215692d843cd1242_23698812%%*/
+/*%%SmartyHeaderCode:16179725715696f1f9e5ece4_45588364%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd3c98e1f3082213399a993c46b207b04837ba758' => 
     array (
       0 => '/var/www/html/test-cms/smarty/templates/navigation.tpl',
-      1 => 1452464190,
+      1 => 1452732916,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13222806215692d843cd1242_23698812',
+  'nocache_hash' => '16179725715696f1f9e5ece4_45588364',
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_5692d843cf97c2_43824571',
+  'unifunc' => 'content_5696f1f9e85223_17595387',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5692d843cf97c2_43824571')) {
-function content_5692d843cf97c2_43824571 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5696f1f9e85223_17595387')) {
+function content_5696f1f9e85223_17595387 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '13222806215692d843cd1242_23698812';
+$_smarty_tpl->properties['nocache_hash'] = '16179725715696f1f9e5ece4_45588364';
 ?>
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -78,9 +78,9 @@ $_smarty_tpl->properties['nocache_hash'] = '13222806215692d843cd1242_23698812';
                                     <a ng-click='go(file.docs, 0)' class="section-controll"  ref="{{file.href}}"><i class="fa fa-file fa-fw"></i>{{file.docs}}</a>
                                 </li>
 
-                        </ul>
-                           <button class="btn btn-primary section-add-btn hide-me">Nauja skiltis</button>
-                           <button ng-click="sectionControl()" class="btn btn-primary section-controll-btn hide-me">Valdyti skiltis</button>
+                              </ul>
+                              <button class="btn btn-primary section-add-btn hide-me">Nauja skiltis</button>
+                              <button ng-click="sectionControl()" class="btn btn-primary section-controll-btn hide-me">Valdyti skiltis</button>
                             
                         </li>
                         <!-- <li>
@@ -88,7 +88,8 @@ $_smarty_tpl->properties['nocache_hash'] = '13222806215692d843cd1242_23698812';
 
                         </li> -->
                         <li>
-                            <a href="#"><i class="fa  fa-cog fa-fw"></i>Nustatymai<span class="fa arrow"></span></a>
+                            <a class="settings-nav" href="#"><i class="fa  fa-cog fa-fw"></i>Nustatymai<span class="fa arrow"></span></a>
+                            
                             <ul class="nav nav-second-level">
                                 <li ng-repeat="setting in settings.docs">
                                     <a ng-click='translation()' class="cms" ref="{{setting.href}}"><i class="fa fa-cog fa-fw"></i>Vertimų/kalbų valdymas</a>
