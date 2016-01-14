@@ -30,7 +30,7 @@ $(document).ready(function(){
                  $('.skill-image').click(function(){
                     var id = $(this).attr('id');
                     $('.skill-description.open').removeClass('open');
-                    $('.skill-image.active').removeClass('active1');
+                    $('.skill-image.active').removeClass('active');
                     $('article#'+id+'-desc'+'.skill-description').toggleClass('open');
                     $('img#'+id+'.skill-image').toggleClass('active');
                 });
@@ -130,6 +130,33 @@ $(document).ready(function(){
                         $('#contact-form')[0].reset();
                     });
                     $.magnificPopup.close();
+                });
+                $('.cform-submit').attr('disabled', 'disabled');
+                $('.im-not-a-robot').on("click", function(){
+                    $('.contact-form-wait').removeClass('hide-me');
+                    setTimeout(function () {
+                        $(".contact-form-check").removeClass('hide-me');
+                        $(".contact-form-check").attr('checked', 'checked');
+                        $(".contact-form-check").attr('disabled', 'disabled');
+                        $('.contact-form-wait').toggleClass('hide-me');
+                        $('.cform-submit').removeAttr('disabled', 'disabled');
+                    }, 5000);
+                });
+                $(".contact-form-check").on('change', function() {
+                    if(this.checked) {
+                        $('.contact-form-wait').removeClass('hide-me');
+                        $(".contact-form-check").attr('disabled', 'disabled');
+                        setTimeout(function () {
+                            $(".contact-form-check").removeClass('hide-me');
+                            $(".contact-form-check").attr('checked', 'checked');
+                            $('.contact-form-wait').toggleClass('hide-me');
+                            $('.cform-submit').removeAttr('disabled', 'disabled');
+                        }, 3500);
+                        $('.contact-form-submit').removeAttr('disabled', 'disabled');
+                    }
+                    else {
+                        $('.contact-form-submit').attr('disabled', 'disabled');
+                    }
                 });
             },
             sliderControl : function(){

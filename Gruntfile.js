@@ -5,8 +5,8 @@ module.exports = function(grunt) {
             main: {
                 files: {
                     'css/styles.min.css': 'css/styles.css',
-                    'build/bootstrap.min.css': 'css/bootstrap.css',
-                    'build/jquery.bxslider.min.css': 'slider/jquery.bxslider.css',
+                    'css/bootstrap.min.css': 'css/bootstrap.css',
+                    'css/jquery.bxslider.min.css': 'slider/jquery.bxslider.css',
                 }
             }
         },

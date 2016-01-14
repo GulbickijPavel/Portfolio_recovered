@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2016-01-07 15:01:25
+<?php /* Smarty version 3.1.24, created on 2016-01-14 02:09:41
          compiled from "/var/www/html/smarty/templates/sections/skills.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:274809147568e61a53edce7_98285772%%*/
+/*%%SmartyHeaderCode:6645320585696e745d90667_63476661%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -13,20 +13,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '274809147568e61a53edce7_98285772',
+  'nocache_hash' => '6645320585696e745d90667_63476661',
   'variables' => 
   array (
     'lang' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_568e61a5404955_21440769',
+  'unifunc' => 'content_5696e745da7644_68447950',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_568e61a5404955_21440769')) {
-function content_568e61a5404955_21440769 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5696e745da7644_68447950')) {
+function content_5696e745da7644_68447950 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '274809147568e61a53edce7_98285772';
+$_smarty_tpl->properties['nocache_hash'] = '6645320585696e745d90667_63476661';
 ?>
         <section class="jumbotron" id="skills">
             <h2><?php echo smarty_function_translation(array('langEn'=>"Skills"),$_smarty_tpl);?>

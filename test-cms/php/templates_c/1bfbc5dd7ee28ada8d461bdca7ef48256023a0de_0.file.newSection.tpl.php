@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2016-01-11 18:11:35
+<?php /* Smarty version 3.1.24, created on 2016-01-14 02:18:45
          compiled from "/var/www/html/test-cms/smarty/templates/newSection.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:19943915665693d437b63cd4_75805912%%*/
+/*%%SmartyHeaderCode:6380613665696e965a9d0f8_49849175%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1bfbc5dd7ee28ada8d461bdca7ef48256023a0de' => 
     array (
       0 => '/var/www/html/test-cms/smarty/templates/newSection.tpl',
-      1 => 1452467054,
+      1 => 1452556817,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '19943915665693d437b63cd4_75805912',
+  'nocache_hash' => '6380613665696e965a9d0f8_49849175',
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_5693d437b76ff8_99386587',
+  'unifunc' => 'content_5696e965ab4419_07728731',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5693d437b76ff8_99386587')) {
-function content_5693d437b76ff8_99386587 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5696e965ab4419_07728731')) {
+function content_5696e965ab4419_07728731 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '19943915665693d437b63cd4_75805912';
+$_smarty_tpl->properties['nocache_hash'] = '6380613665696e965a9d0f8_49849175';
 ?>
 
   <form id="new-section-form228" class="form-horizontal" enctype="multipart/form-data">
@@ -38,11 +38,11 @@ $_smarty_tpl->properties['nocache_hash'] = '19943915665693d437b63cd4_75805912';
         </div>
         <div class="input-group">
           <span class="input-group-addon">Skilties pavadinimas:</span>
-          <input type="text" class="form-control" name="sectionName">
+          <input type="text" class="form-control" name="sectionName" data-validation="custom" data-validation-regexp="^([ a-zA-Z0-9]+)$" data-validation-error-msg="Naudokite tik lotiniškas raides/skaičius, tarpus" data-validation-optional="true">
         </div>
         <div class="input-group">
           <span class="input-group-addon">Naudoti lentelę:</span>
-          <input type="text" class="form-control" name="usingTable">
+          <input type="text" class="form-control" name="usingTable" data-validation="custom" data-validation-regexp="^([a-zA-Z0-9]+)$" data-validation-error-msg="Naudokite tik lotiniškas raides/skaičius be tarpų" data-validation-optional="true">
         </div>
       <input type="button" value="Uždaryti" class="close-form-btn btn btn-default">
       <!-- <button class="btn btn-default close-form-btn" type="">Uždaryti</button> -->
@@ -65,7 +65,7 @@ $_smarty_tpl->properties['nocache_hash'] = '19943915665693d437b63cd4_75805912';
         <div ng-repeat="item in secToEdit">
             <div ng-if='item.Type == "varchar(50)" && item.Field != "lang"' class="input-group">
                 <span class="input-group-addon">{{item.Field}}</span>
-                <input  class="form-control col-xs-9" type="text" name="{{item.Field}}" value="{{sectionVal[item.Field]}}">
+                <input disabled class="form-control col-xs-9" type="text" name="{{item.Field}}" value="{{sectionVal[item.Field]}}">
             </div>
         </div>
         
